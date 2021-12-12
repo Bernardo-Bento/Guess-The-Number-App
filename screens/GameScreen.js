@@ -19,9 +19,9 @@ const generateRandomBetween = (min, max, exclude) => {
 };
 const GameScreen = props => {
     const userNumber = props.userChosenNumber();
-    const [currentGuess, setCurrentGuess] = useState(generateRandomBetween(1, 99, null));
+    const [currentGuess, setCurrentGuess] = useState(generateRandomBetween(1, 100, null));
     const [currentMin, setCurrentMin] = useState(1);
-    const [currentMax, setCurrentMax] = useState(99);
+    const [currentMax, setCurrentMax] = useState(100); //done by Carolina //
 
     const checkWin = (number) => {
         if (number === userNumber) {
@@ -62,6 +62,7 @@ const GameScreen = props => {
 
     return (
         <View style={styles.screen}>
+            
             <Text style={styles.computerGuessText}> Computer guess is: </Text>
             <Card style={styles.guessCard}>
                 <Text style={styles.computerGuess}> {currentGuess} </Text>

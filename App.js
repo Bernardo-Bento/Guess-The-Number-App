@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import Header from './components/Header';
 import StartGameScreen from './screens/StartGameScreen';
 import GameScreen from './screens/GameScreen';
-
+import GoToSetubal from './screens/GoToSetubal';
 
 export default function App() {
   const [userNumber, setUserNumber] = useState(undefined);
@@ -33,18 +33,6 @@ export default function App() {
   if (currentScreen === 'GameScreen') {
     screen = <GameScreen userChosenNumber={getUserNumber} resetGame={() => { goToMainScreen() }} />;
   }
-
-  // let screen = <StartGameScreen onStartGame={startGameHandler} />;
-  // if (userNumber !== undefined) {
-  //   screen = <GameScreen userChosenNumber={getUserNumber} resetGame={(state) => {
-  //     if (state === true) {
-  //       setUserNumber(undefined);
-  //     }
-  //     else {
-  //       return;
-  //     }
-  //   }} />;
-  // }
 
 
   return (

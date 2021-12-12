@@ -101,6 +101,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
 
     },
+
     card: {
         width: '100%',
         maxWidth: 300,
