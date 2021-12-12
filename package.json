@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Bernardo-Bento.github.io/Guess-The-Number-App",
   "name": "guess-the-number-app",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
@@ -7,7 +8,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "expo": "~43.0.2",
